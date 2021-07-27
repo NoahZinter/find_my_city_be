@@ -1,4 +1,5 @@
 language: ruby
+os: osx
 addons:
   postgresql: 9.6
 script:
