@@ -213,6 +213,7 @@ DEPENDENCIES
   pry
   puma (~> 3.11)
   rails (~> 5.2.6)
+  railties
   rake
   rspec-rails
   rubocop-rails
