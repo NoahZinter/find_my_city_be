@@ -23,6 +23,9 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'database_cleaner-active_record'
+  gem 'webmock'
+  gem 'vcr'
+  gem 'capybara'
 end
 
 group :development do
