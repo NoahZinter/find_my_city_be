@@ -19,9 +19,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'travis'
+  # gem 'railties'
 end
-
-
 
 group :test do
   gem 'rspec-rails'
@@ -32,6 +31,7 @@ group :test do
   gem 'capybara'
   gem 'webmock'
   gem 'vcr'
+  gem 'rake'
 end
 
 group :development do
