@@ -12,14 +12,12 @@ gem 'faraday'
 gem 'jsonapi-serializer'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'simplecov'
   gem 'rubocop-rails'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'travis'
-  # gem 'railties'
 end
 
 group :test do
@@ -41,9 +39,9 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-  gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-end
+gem 'listen', '>= 3.0.5', '< 3.2'
+gem 'spring'
+gem 'spring-watcher-listen', '~> 2.0.0'
+
 
 
