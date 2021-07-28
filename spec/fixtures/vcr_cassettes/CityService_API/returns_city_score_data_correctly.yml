@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.teleport.org/api/urban_areas/slug:denver/scores
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '880'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 28 Jul 2021 02:24:10 GMT
+      Access-Control-Max-Age:
+      - '600'
+      Cache-Control:
+      - public, max-age=300
+      Server:
+      - nginx
+      X-Apiproxy-Cache-Status:
+      - MISS
+      Vary:
+      - Origin,Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 38059ba65876500c040fb73e2cbaebf5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - NESpQbj1rXfNAB7Hwe7c8J0xm96fWed6KCxxzF1f7iWoqdUhRaFtAw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"_links":{"curies":[{"href":"https://developers.teleport.org/api/resources/Location/#!/relations/{rel}/","name":"location","templated":true},{"href":"https://developers.teleport.org/api/resources/City/#!/relations/{rel}/","name":"city","templated":true},{"href":"https://developers.teleport.org/api/resources/UrbanArea/#!/relations/{rel}/","name":"ua","templated":true},{"href":"https://developers.teleport.org/api/resources/Country/#!/relations/{rel}/","name":"country","templated":true},{"href":"https://developers.teleport.org/api/resources/Admin1Division/#!/relations/{rel}/","name":"a1","templated":true},{"href":"https://developers.teleport.org/api/resources/Timezone/#!/relations/{rel}/","name":"tz","templated":true}],"self":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/scores/"}},"categories":[{"color":"#f3c32c","name":"Housing","score_out_of_10":3.8375},{"color":"#f3d630","name":"Cost
+        of Living","score_out_of_10":5.102},{"color":"#f4eb33","name":"Startups","score_out_of_10":7.8645},{"color":"#d2ed31","name":"Venture
+        Capital","score_out_of_10":6.117},{"color":"#7adc29","name":"Travel Connectivity","score_out_of_10":4.243},{"color":"#36cc24","name":"Commute","score_out_of_10":4.530000000000001},{"color":"#19ad51","name":"Business
+        Freedom","score_out_of_10":8.671},{"color":"#0d6999","name":"Safety","score_out_of_10":5.371},{"color":"#051fa5","name":"Healthcare","score_out_of_10":8.615666666666666},{"color":"#150e78","name":"Education","score_out_of_10":3.6245},{"color":"#3d14a4","name":"Environmental
+        Quality","score_out_of_10":7.11675},{"color":"#5c14a1","name":"Economy","score_out_of_10":6.5145},{"color":"#88149f","name":"Taxation","score_out_of_10":4.346},{"color":"#b9117d","name":"Internet
+        Access","score_out_of_10":5.418500000000001},{"color":"#d10d54","name":"Leisure
+        \u0026 Culture","score_out_of_10":6.2235},{"color":"#e70c26","name":"Tolerance","score_out_of_10":7.860499999999999},{"color":"#f1351b","name":"Outdoors","score_out_of_10":7.932999999999999}],"summary":"\u003cp\u003eDenver,
+        Colorado, is among the top cities with a \u003cb\u003efree business environment\u003c/b\u003e.\n\n    \n        According
+        to our city rankings, this is a good place to live with high ratings in \u003cb\u003estartups\u003c/b\u003e,
+        \u003cb\u003ehealthcare\u003c/b\u003e and \u003cb\u003eenvironmental quality\u003c/b\u003e.\n    \n\n    \n\u003c/p\u003e\n\n\n    \u003cp\u003eDenver
+        is one of the top ten city matches for 4.1% of Teleport users.\u003c/p\u003e\n","teleport_city_score":61.413243243243265}'
+  recorded_at: Wed, 28 Jul 2021 02:24:10 GMT
+recorded_with: VCR 6.0.0
