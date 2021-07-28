@@ -1,7 +1,7 @@
 class CityFacade
   class << self
-    def city_scores(city)
-      scores = CityService.get_city_scores(city)
+    def city_scores(city, state_initials)
+      scores = CityService.get_city_info(city, state_initials)
       City.new(scores)
     end
   end
