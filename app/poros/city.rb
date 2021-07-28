@@ -11,7 +11,7 @@ class City
     # @name = data[:name] - won't know till we get endpoint
     @categories = data[:categories]
     @summary = data[:summary]
-    @total_score = data[:teleport_city_score]
+    @total_score = data[:teleport_city_score].round(2)
     # @picture = data[:picture] - won't know till we get endpoint
   end
 
