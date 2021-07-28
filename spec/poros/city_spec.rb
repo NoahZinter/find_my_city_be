@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe City do
   it 'it should build a City PORO' do
+    data = CityService.get_city_info('denver', 'co')
     city = City.new(data)
     # city = City.new(score_data, details_data, picture_data)
 
