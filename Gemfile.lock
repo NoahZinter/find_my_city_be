@@ -275,7 +275,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  x86_64-darwin-20
+  x86_64-darwin-19
   x86_64-linux
 
 DEPENDENCIES
@@ -294,7 +294,6 @@ DEPENDENCIES
   pry
   puma (~> 3.11)
   rails (~> 5.2.6)
-  rake
   rspec-rails
   rubocop-rails
   shoulda-matchers
