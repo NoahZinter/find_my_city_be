@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'CityService API' do
   it 'returns city score data correctly', :vcr do
-    data = CityService.get_city_scores('denver')
+    data = CityService.get_city_info('denver', 'co')[:_embedded][:"city:search-results"][0][:_embedded][:"city:item"][:_embedded][:"city:urban_area"][:_embedded][:"ua:scores"]
 
     expect(data).to have_key(:categories)
     expect(data).to have_key(:summary)

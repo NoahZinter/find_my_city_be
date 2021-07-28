@@ -1,7 +1,7 @@
 class CityService
   class << self
-    def get_city_scores(city)
-      response = conn.get("/api/urban_areas/slug:#{city}/scores")
+    def get_city_info(city, state_initials)
+      response = conn.get("https://api.teleport.org/api/cities/?search=#{city}%2C%20#{state_initials}&embed=city%3Asearch-results%2Fcity%3Aitem%2Fcity%3Aurban_area%2Fua%3Ascores")
       parse_json(response)
     end
 
