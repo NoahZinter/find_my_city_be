@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2021_07_28_233900) do
     t.string "summary"
     t.string "category_name"
     t.float "category_score"
+    t.integer "population"
     t.float "total_score"
     t.binary "picture"
     t.datetime "created_at", null: false

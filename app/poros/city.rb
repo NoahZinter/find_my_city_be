@@ -28,4 +28,12 @@ class City
       category
     end
   end
+
+  def category_name
+    @categories.map { |category| category[:name] }
+  end
+
+  def category_score
+    @categories.map { |category| category[:score_out_of_10] }
+  end
 end
