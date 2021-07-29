@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe 'CityFacade' do
   it 'returns a movie with score details' do
      VCR.use_cassette('returns_city_score_data_correctly') do
-       facade = CityFacade.city_scores('denver')
+       facade = CityFacade.city_scores('denver', 'co')
 
-       expect(facade).to be_a(City)
+       expect(facade).to be_a(CityDetail)
        expect(facade.categories_hash_array).to be_a(Array)
        expect(facade.summary).to be_a(String)
        expect(facade.total_score).to be_a(Float)
