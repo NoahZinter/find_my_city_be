@@ -4,7 +4,7 @@ class City
               :city,
               :state,
               :picture,
-              :categories,
+              :categories_hash_array,
               :id
 
   def initialize(data, photo_data)
