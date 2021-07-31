@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'CityFacade' do
-  it 'returns a movie with score details' do
+  it 'returns a city with details' do
      VCR.use_cassette('returns_city_score_data_correctly') do
        facade = CityFacade.city_scores('denver', 'co')
 

@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sat, 31 Jul 2021 20:23:58 GMT
+      - Sat, 31 Jul 2021 20:17:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -40,5 +40,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"coord":{"lon":-80.8431,"lat":35.2271},"weather":[{"id":802,"main":"Clouds","description":"scattered
         clouds","icon":"03d"}],"base":"stations","main":{"temp":306.26,"feels_like":310.26,"temp_min":304.15,"temp_max":307.91,"pressure":1013,"humidity":52},"visibility":10000,"wind":{"speed":3.09,"deg":250},"clouds":{"all":40},"dt":1627762449,"sys":{"type":2,"id":2007844,"country":"US","sunrise":1627727501,"sunset":1627777658},"timezone":-14400,"id":4460243,"name":"Charlotte","cod":200}'
-  recorded_at: Sat, 31 Jul 2021 20:23:58 GMT
+  recorded_at: Sat, 31 Jul 2021 20:17:32 GMT
 recorded_with: VCR 6.0.0
