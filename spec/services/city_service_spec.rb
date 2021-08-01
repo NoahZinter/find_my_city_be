@@ -30,8 +30,8 @@ RSpec.describe 'CityService API' do
   it 'can get a photo of a searched for city', :vcr do
     data = CityService.get_photos_of_city('denver')[:photos][0][:image][:web]
 
-    photo_link_web = "https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver_web-9726d88300.jpg" 
-    
+    photo_link_web = "https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver_web-9726d88300.jpg"
+
     expect(data).to eq(photo_link_web)
   end
 end
