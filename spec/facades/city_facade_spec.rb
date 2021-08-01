@@ -30,4 +30,10 @@ RSpec.describe 'CityFacade' do
       {:name=>"Tolerance", :score_out_of_10=>7.860499999999999},
       {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}])
   end
+
+  it 'returns a photo of a city' do
+      facade = CityFacade.city_data('denver', 'co')
+
+      expect(facade.picture).to eq("https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver_web-9726d88300.jpg")
+  end
 end
