@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sun, 01 Aug 2021 00:18:13 GMT
+      - Sun, 01 Aug 2021 00:32:01 GMT
       Access-Control-Max-Age:
       - '600'
       Cache-Control:
@@ -33,22 +33,22 @@ http_interactions:
       Server:
       - nginx
       X-Apiproxy-Cache-Status:
-      - MISS
+      - EXPIRED
       Vary:
       - Origin,Accept-Encoding
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 fdc1968a0f97e3bcaa230ab8e3e6223d.cloudfront.net (CloudFront)
+      - 1.1 c826032beb60081d460e792c7876aa22.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DFW55-C3
       X-Amz-Cf-Id:
-      - 1uYVaVOPoz_A8ihsADKLefGQHZHfrJlB0HtYACEPqKpKmV500mvxLQ==
+      - bi-OvCtzPj0KTZKi1GDFF0RRq7bUJaonUvu9GryXV6cu8pR1xElWGg==
       Age:
       - '1'
     body:
       encoding: ASCII-8BIT
       string: '{"_links":{"curies":[{"href":"https://developers.teleport.org/api/resources/Location/#!/relations/{rel}/","name":"location","templated":true},{"href":"https://developers.teleport.org/api/resources/City/#!/relations/{rel}/","name":"city","templated":true},{"href":"https://developers.teleport.org/api/resources/UrbanArea/#!/relations/{rel}/","name":"ua","templated":true},{"href":"https://developers.teleport.org/api/resources/Country/#!/relations/{rel}/","name":"country","templated":true},{"href":"https://developers.teleport.org/api/resources/Admin1Division/#!/relations/{rel}/","name":"a1","templated":true},{"href":"https://developers.teleport.org/api/resources/Timezone/#!/relations/{rel}/","name":"tz","templated":true}],"self":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/images/"}},"photos":[{"attribution":{"license":"Attribution,
         ShareAlike","photographer":"Sheila Sund","site":"Flickr","source":"https://www.flickr.com/photos/sheila_sund/8903465080/"},"image":{"mobile":"https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver-655725fd8b.jpg","web":"https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver_web-9726d88300.jpg"}}]}'
-  recorded_at: Sun, 01 Aug 2021 00:18:14 GMT
+  recorded_at: Sun, 01 Aug 2021 00:32:02 GMT
 recorded_with: VCR 6.0.0
