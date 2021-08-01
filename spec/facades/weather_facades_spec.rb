@@ -8,7 +8,7 @@ RSpec.describe 'WeatherFacade API' do
       expect(data.lon).to be_a(Float)
       expect(data.temp).to be_a(Float)
       expect(data.temp_max).to be_a(Float)
-      expect(data.temp_min).to be_a(Float)
+      expect(data.temp_min).to be_a(Integer)
       expect(data.humidity).to be_a(Integer)
       expect(data.description).to be_a(String)
       expect(data.visibility).to be_a(Integer)
