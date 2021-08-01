@@ -1,7 +1,8 @@
 class CityService
   class << self
     def get_city_info(city, state_initials)
-      response = conn.get("/api/cities/?search=#{city}%2C%20#{state_initials}&embed=city%3Asearch-results%2Fcity%3Aitem%2Fcity%3Aurban_area%2Fua%3Ascores")
+      response = conn.get("/api/cities/?search=#{city}, #{state_initials}&limit=1&embed=city:search-results/city:item/city:urban_area/ua:scores")
+
       parse_json(response)
     end
 

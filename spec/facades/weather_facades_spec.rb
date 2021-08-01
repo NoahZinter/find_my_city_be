@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe 'WeatherFacade API' do
-  it 'returns weather data correctly', :vcr do
+  it 'returns weather data correctly for facade', :vcr do
     VCR.use_cassette('returns_weather_data_correctly') do
       data = WeatherFacade.weather("Charlotte", "NC")
 
       expect(data.lat).to eq(35.2271)
       expect(data.lon).to eq(-80.8431)
-      expect(data.temp).to eq(306.26)
+      expect(data.temp).to eq(302.66)
       expect(data.temp_max).to eq(307.91)
       expect(data.temp_min).to eq(304.15)
       expect(data.humidity).to eq(52)

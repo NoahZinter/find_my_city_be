@@ -16,9 +16,11 @@ ActiveRecord::Schema.define(version: 2021_07_28_233900) do
   enable_extension "plpgsql"
 
   create_table "cities", force: :cascade do |t|
-    t.string "name"
+    t.string "city"
+    t.string "state"
     t.string "summary"
     t.float "total_score"
+    t.text "categories_hash_array"
     t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -34,8 +36,7 @@ ActiveRecord::Schema.define(version: 2021_07_28_233900) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "pid"
-    t.string "name"
+    t.string "google_id"
     t.string "email"
     t.string "token"
     t.datetime "created_at", null: false
