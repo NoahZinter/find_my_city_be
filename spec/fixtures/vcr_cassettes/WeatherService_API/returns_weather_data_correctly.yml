@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 01 Aug 2021 00:32:02 GMT
+      - Sun, 01 Aug 2021 00:44:22 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -39,6 +39,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"coord":{"lon":-80.8431,"lat":35.2271},"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04n"}],"base":"stations","main":{"temp":301.78,"feels_like":305.09,"temp_min":299.15,"temp_max":303.55,"pressure":1012,"humidity":70},"visibility":10000,"wind":{"speed":1.54,"deg":290},"clouds":{"all":75},"dt":1627777787,"sys":{"type":2,"id":2007844,"country":"US","sunrise":1627727501,"sunset":1627777658},"timezone":-14400,"id":4460243,"name":"Charlotte","cod":200}'
-  recorded_at: Sun, 01 Aug 2021 00:32:02 GMT
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":301.23,"feels_like":304.11,"temp_min":298.56,"temp_max":303.13,"pressure":1012,"humidity":71},"visibility":10000,"wind":{"speed":1.54,"deg":290},"clouds":{"all":75},"dt":1627778662,"sys":{"type":2,"id":2007844,"country":"US","sunrise":1627727501,"sunset":1627777658},"timezone":-14400,"id":4460243,"name":"Charlotte","cod":200}'
+  recorded_at: Sun, 01 Aug 2021 00:44:22 GMT
 recorded_with: VCR 6.0.0

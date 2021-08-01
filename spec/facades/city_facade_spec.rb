@@ -2,8 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'CityFacade' do
 
-  it 'returns a city with score details' do
-    VCR.use_cassette('returns city score data correctly') do
+  it 'returns a city with score details', :vcr do
       facade = CityFacade.city_data('denver', 'co')
 
       expect(facade).to be_a(CityDetail)
@@ -30,6 +29,5 @@ RSpec.describe 'CityFacade' do
       {:name=>"Leisure & Culture", :score_out_of_10=>6.2235},
       {:name=>"Tolerance", :score_out_of_10=>7.860499999999999},
       {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}])
-    end
   end
 end
