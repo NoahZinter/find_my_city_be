@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?APPID=<WEATHER_API_KEY>&q=Charlotte,NC,US&unit=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 01 Aug 2021 00:18:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '492'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?APPID=<WEATHER_API_KEY>&q=charlotte%2cnc%2cus&unit=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-80.8431,"lat":35.2271},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"base":"stations","main":{"temp":302.3,"feels_like":305.83,"temp_min":299.92,"temp_max":304.1,"pressure":1012,"humidity":68},"visibility":10000,"wind":{"speed":0.45,"deg":246,"gust":1.34},"clouds":{"all":75},"dt":1627776532,"sys":{"type":2,"id":2007844,"country":"US","sunrise":1627727501,"sunset":1627777658},"timezone":-14400,"id":4460243,"name":"Charlotte","cod":200}'
+  recorded_at: Sun, 01 Aug 2021 00:18:14 GMT
+recorded_with: VCR 6.0.0

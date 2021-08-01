@@ -45,7 +45,7 @@ describe 'CityWeather' do
                     "name": "Springfield",
                     "cod": 200
                 }
-      data = CityWeather.new(springfield)
+    data = CityWeather.new(springfield)
 
     expect(data.lat).to eq(39.8017)
     expect(data.lon).to eq(-89.6437)
