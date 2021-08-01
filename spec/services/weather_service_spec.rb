@@ -13,4 +13,5 @@ RSpec.describe 'WeatherService API' do
     expect(data).to have_key(:main)
     expect(data[:main]).to have_key(:temp)
   end
+  
 end
