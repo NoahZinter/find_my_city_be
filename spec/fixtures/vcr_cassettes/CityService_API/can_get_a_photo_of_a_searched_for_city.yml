@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 30 Jul 2021 22:37:02 GMT
+      - Sun, 01 Aug 2021 15:35:23 GMT
       Access-Control-Max-Age:
       - '600'
       Cache-Control:
@@ -39,16 +39,16 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 b38c85b91efc7fa1238f9c75e1e5d933.cloudfront.net (CloudFront)
+      - 1.1 353760c441dc8d01e037336279926a5f.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - IAD79-C3
+      - ATL51-C1
       X-Amz-Cf-Id:
-      - nLCrHZqGWPiHVkb2aN843X1FMuoHfAK0mlSHLhIYYQmveFtG6K_uvA==
+      - ciDVtIF37FJGZkv80cgjiNEeRSFEejAIEHwXb4mB3WlVVzOnjDC-rQ==
       Age:
-      - '2'
+      - '5'
     body:
       encoding: ASCII-8BIT
       string: '{"_links":{"curies":[{"href":"https://developers.teleport.org/api/resources/Location/#!/relations/{rel}/","name":"location","templated":true},{"href":"https://developers.teleport.org/api/resources/City/#!/relations/{rel}/","name":"city","templated":true},{"href":"https://developers.teleport.org/api/resources/UrbanArea/#!/relations/{rel}/","name":"ua","templated":true},{"href":"https://developers.teleport.org/api/resources/Country/#!/relations/{rel}/","name":"country","templated":true},{"href":"https://developers.teleport.org/api/resources/Admin1Division/#!/relations/{rel}/","name":"a1","templated":true},{"href":"https://developers.teleport.org/api/resources/Timezone/#!/relations/{rel}/","name":"tz","templated":true}],"self":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/images/"}},"photos":[{"attribution":{"license":"Attribution,
         ShareAlike","photographer":"Sheila Sund","site":"Flickr","source":"https://www.flickr.com/photos/sheila_sund/8903465080/"},"image":{"mobile":"https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver-655725fd8b.jpg","web":"https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver_web-9726d88300.jpg"}}]}'
-  recorded_at: Fri, 30 Jul 2021 22:37:04 GMT
+  recorded_at: Sun, 01 Aug 2021 15:35:26 GMT
 recorded_with: VCR 6.0.0

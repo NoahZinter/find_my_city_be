@@ -33,10 +33,8 @@ RSpec.describe 'CityFacade' do
   end
 
   it 'returns a photo of a city' do
-    VCR.use_cassette('can_get_a_photo_of_a_searched_for_city') do
       facade = CityFacade.city_data('denver', 'co')
 
       expect(facade.picture).to eq("https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver_web-9726d88300.jpg")
-    end
   end
 end
