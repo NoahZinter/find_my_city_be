@@ -58,5 +58,6 @@ describe 'CityWeather' do
     expect(data.wind_speed).to eq(2.57)
     expect(data.sunrise).to eq(1627729002)
     expect(data.sunset).to eq(1627780382)
+    expect(data.id).to eq(4250542)
   end
 end
