@@ -7,7 +7,13 @@ class CityService
 
     def get_photos_of_city(city)
       response = conn.get("/api/urban_areas/slug:#{city.downcase}/images/")
-      parse_json(response)
+      res = parse_json(response)
+      if response.status == 404
+        response = conn.get("/api/urban_areas/slug:denver/images/")
+        parse_json(response)
+      else
+        res
+      end
     end
 
     private
