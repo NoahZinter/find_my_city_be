@@ -9,7 +9,8 @@ class CityWeather
               :visibility,
               :wind_speed,
               :sunrise,
-              :sunset
+              :sunset,
+              :id
 
   def initialize(data)
     @lat = data[:coord][:lat]
@@ -23,6 +24,7 @@ class CityWeather
     @wind_speed = data[:wind][:speed]
     @sunrise = data[:sys][:sunrise]
     @sunset = data[:sys][:sunset]
+    @id = data[:id]
   end
 
 end
