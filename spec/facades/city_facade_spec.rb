@@ -35,7 +35,9 @@ RSpec.describe 'CityFacade' do
     facade = CityFacade.city_data('san francisco', 'ca')
   end
 
-    it 'returns city results with a city that has three words for a city name' do
+  it 'returns city results with a city that has three words for a city name' do
     facade = CityFacade.city_data('new york city', 'ny')
   end
+
+  
 end
