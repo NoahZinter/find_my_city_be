@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'CityFacade' do
 
-  it 'returns a city with score details', :vcr do
+  xit 'returns a city with score details', :vcr do
       facade = CityFacade.city_data('denver', 'co')
 
       expect(facade).to be_a(CityDetail)
@@ -31,9 +31,14 @@ RSpec.describe 'CityFacade' do
       {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}])
   end
 
-  it 'returns a photo of a city' do
+  xit 'returns a photo of a city' do
       facade = CityFacade.city_data('denver', 'co')
 
       expect(facade.picture).to eq("https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver_web-9726d88300.jpg")
+  end
+
+  it 'returns city results with a city that has two words for a city name' do
+    facade = CityFacade.city_data('san francisco', 'ca')
+    binding.pry
   end
 end
