@@ -6,18 +6,6 @@ class CityService
       parse_json(response)
     end
 
-    def get_photos_of_city(city)
-      city = ERB::Util.url_encode(city)
-      response = conn.get("/api/urban_areas/slug:#{city}/images/")
-      res = parse_json(response)
-      if response.status == 404
-        response = conn.get("/api/urban_areas/slug:denver/images/")
-        parse_json(response)
-      else
-        res
-      end
-    end
-
     private
 
     def conn
