@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 02 Aug 2021 17:36:47 GMT
+      - Tue, 03 Aug 2021 00:47:32 GMT
       Access-Control-Max-Age:
       - '600'
       Cache-Control:
@@ -33,22 +33,22 @@ http_interactions:
       Server:
       - nginx
       X-Apiproxy-Cache-Status:
-      - HIT
+      - EXPIRED
       Vary:
       - Origin,Accept-Encoding
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 18b6696ca42addba6911206e2172f1b0.cloudfront.net (CloudFront)
+      - 1.1 3348e21d56f028d9bb078f3a5940584c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DFW55-C3
+      - ATL51-C1
       X-Amz-Cf-Id:
-      - a8jMm7W6Ox-p_Ot6XEUygyIWzff9rz2hASiciyVtMr0bmTHeTnh9fw==
+      - thoZXQDmaZUYhBGBult1FndOMgrzVPt0IbFyaXKSZsnEYb9AJ-yDLg==
       Age:
-      - '1'
+      - '221'
     body:
       encoding: ASCII-8BIT
       string: '{"_links":{"curies":[{"href":"https://developers.teleport.org/api/resources/Location/#!/relations/{rel}/","name":"location","templated":true},{"href":"https://developers.teleport.org/api/resources/City/#!/relations/{rel}/","name":"city","templated":true},{"href":"https://developers.teleport.org/api/resources/UrbanArea/#!/relations/{rel}/","name":"ua","templated":true},{"href":"https://developers.teleport.org/api/resources/Country/#!/relations/{rel}/","name":"country","templated":true},{"href":"https://developers.teleport.org/api/resources/Admin1Division/#!/relations/{rel}/","name":"a1","templated":true},{"href":"https://developers.teleport.org/api/resources/Timezone/#!/relations/{rel}/","name":"tz","templated":true}],"self":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/images/"}},"photos":[{"attribution":{"license":"Attribution,
         ShareAlike","photographer":"Sheila Sund","site":"Flickr","source":"https://www.flickr.com/photos/sheila_sund/8903465080/"},"image":{"mobile":"https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver-655725fd8b.jpg","web":"https://d13k13wj6adfdf.cloudfront.net/urban_areas/denver_web-9726d88300.jpg"}}]}'
-  recorded_at: Mon, 02 Aug 2021 17:36:48 GMT
+  recorded_at: Tue, 03 Aug 2021 00:51:12 GMT
 recorded_with: VCR 6.0.0
