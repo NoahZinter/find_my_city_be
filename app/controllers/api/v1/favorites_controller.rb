@@ -5,7 +5,7 @@ class Api::V1::FavoritesController < ApplicationController
       render json: FavoriteSerializer.new(favorite).serializable_hash.to_json, status: 201
     else
       render json: {
-        error: "Missing or incorrect item params",
+        error: "Missing or incorrect favorite params",
         status: 400
       }, status: 400
     end

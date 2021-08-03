@@ -14,6 +14,8 @@ RSpec.describe 'Favorites Requests' do
       created_favorite = Favorite.last
 
       expect(response.status).to eq 201
+      expect(created_favorite.user_id).to eq user_id
+      expect(created_favorite.city_id).to eq city_id
     end
   end
 end
