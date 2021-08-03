@@ -7,7 +7,7 @@ class Api::V1::UsersController < ApplicationController
       else
         render :json => {:error =>  "Unprocessable Entity"}.to_json, :status => 422
     end
-  end    
+  end
 
   private
 
