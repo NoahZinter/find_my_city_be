@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :weather
       resources :city
       resources :favorites
+      resources :users
     end
   end
 end
