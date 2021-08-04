@@ -1,8 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'CityService API' do
-  it 'returns city score data correctly', :vcr do
+  xit 'returns city score data correctly', :vcr do
     data = CityService.get_city_info('denver', 'co')[:_embedded][:"city:search-results"][0][:_embedded][:"city:item"][:_embedded][:"city:urban_area"][:_embedded][:"ua:scores"]
+    # binding.pry
 
     expect(data).to have_key(:categories)
     expect(data).to have_key(:summary)
@@ -25,5 +26,11 @@ RSpec.describe 'CityService API' do
       expect(category).to have_key(:score_out_of_10)
       expect(category[:score_out_of_10]).to be_an(Float)
     end
+  end
+
+  it 'finds city' do
+    # data = CityService.get_city_info('denver', 'co')[:_embedded][:"city:search-results"][0][:_embedded][:"city:item"][:_embedded][:"city:urban_area"][:_embedded][:"ua:scores"]
+    # data = CityService.get_city_info('spokane', 'wa')[:_embedded][:"city:search-results"][0][:_embedded][:"city:item"]
+    # binding.pry
   end
 end
