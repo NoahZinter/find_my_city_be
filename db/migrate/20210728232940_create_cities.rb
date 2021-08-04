@@ -7,7 +7,6 @@ class CreateCities < ActiveRecord::Migration[5.2]
       t.float :total_score
       t.text :categories_hash_array
       t.string :picture
-      t.integer :population
 
       t.timestamps
     end
