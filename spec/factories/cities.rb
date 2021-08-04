@@ -5,6 +5,6 @@ FactoryBot.define do
     summary { Faker::Lorem.paragraph }
     total_score { Faker::Number.between(from: 0.0, to: 100.0)}
     categories_hash_array { Faker::Lorem.words(number: 4) }
-    picture { Faker::LoremFlickr.image }
+    population { Faker::Number.between(from: 100, to: 1000000)}
   end
 end
