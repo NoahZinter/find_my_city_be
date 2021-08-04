@@ -12,6 +12,10 @@ class Api::V1::FavoritesController < ApplicationController
     end
   end
 
+  def destroy
+    Favorite.destroy(params[:id])
+  end
+
   private
 
   def favorite_creator(city)
