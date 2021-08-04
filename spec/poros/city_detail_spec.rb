@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'City Poro' do
   it 'it should build a City PORO' do
     city = CityDetail.new(data)
+    # binding.pry
 
     expect(city.city).to eq('Denver')
     expect(city.state).to eq('Colorado')

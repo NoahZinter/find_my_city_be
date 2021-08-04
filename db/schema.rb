@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_08_04_005625) do
     t.float "total_score"
     t.text "categories_hash_array"
     t.string "picture"
+    t.integer "population"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

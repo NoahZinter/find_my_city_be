@@ -26,4 +26,5 @@ RSpec.describe 'CityService API' do
       expect(category[:score_out_of_10]).to be_an(Float)
     end
   end
+
 end

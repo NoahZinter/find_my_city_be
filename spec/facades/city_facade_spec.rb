@@ -31,13 +31,4 @@ RSpec.describe 'CityFacade' do
       {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}])
   end
 
-  it 'returns city results with a city that has two words for a city name' do
-    facade = CityFacade.city_data('san francisco', 'ca')
-  end
-
-  it 'returns city results with a city that has three words for a city name' do
-    facade = CityFacade.city_data('new york city', 'ny')
-  end
-
-  
 end
