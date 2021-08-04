@@ -31,7 +31,16 @@ RSpec.describe 'Favorites Requests' do
 
   describe '#delete' do
     it 'deletes a favorite' do
-      
+      user_id = create(:user).id
+      city_id = create(:city).id
+      post "/api/v1/favorites?user_id=#{user_id}&city_id=#{city_id}"
+      created_favorite = Favorite.last
+
+      expect(created_favorite).is_a? Favorite
+
+      delete "/api/v1/favorites/#{created_favorite.id}"
+
+      expect{Favorite.find(created_favorite.id)}.to raise_error(ActiveRecord::RecordNotFound)
     end
   end
 end
