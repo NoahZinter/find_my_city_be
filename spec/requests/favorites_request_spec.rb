@@ -69,6 +69,11 @@ RSpec.describe 'Favorites Requests' do
       expect(fav[:total_score]).to eq 55.55
       expect(fav[:categories_hash_array]).to eq @categories_array
     end
+  end
 
+  describe '#delete' do
+    it 'deletes a favorite' do
+      
+    end
   end
 end
