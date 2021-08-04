@@ -27,7 +27,7 @@ RSpec.describe 'User' do
       user = JSON.parse(response.body, symbolize_names: true)
 
       expect(user[:data][:attributes][:id]).is_a? Integer
-      expect(user[:data][:attributes][:email]).is_a? String
+      expect(user[:data][:attributes][:email]).to eq 'joe@p.com'
       expect(User.find(user[:data][:attributes][:id])).is_a? User
     end
 
