@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'City Request' do
-  describe 'index' do
+  describe 'happy path' do
     it 'searches for a city' do
       get '/api/v1/city?city=Denver&state=CO'
 
@@ -67,6 +67,14 @@ RSpec.describe 'City Request' do
         expect(hash[:name]).is_a? String
         expect(hash[:score_out_of_10]).is_a? Float
       end
+    end
+  end
+
+  describe 'sad path' do
+    it 'returns error' do
+      get '/api/v1/city?city=riggins&state=ID'
+
+      expect(response.status).to eq 404
     end
   end
 end
