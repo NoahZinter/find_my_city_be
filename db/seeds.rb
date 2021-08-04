@@ -10,7 +10,7 @@ City.destroy_all
 User.destroy_all
 Favorite.destroy_all
 
-pers = City.create!(city: 'Persepolis', state: 'Ohio', summary: 'This place is terrible', total_score: 12.34, population: 1000, categories_hash_array: '[{:name=>"Housing", :score_out_of_10=>3.8375},
+pers = City.create!(city: 'Persepolis', state: 'Ohio', summary: 'This place is terrible', total_score: 12.34, population: 1000, categories_hash_array: [{:name=>"Housing", :score_out_of_10=>3.8375},
     {:name=>"Cost of Living", :score_out_of_10=>5.102},
     {:name=>"Startups", :score_out_of_10=>7.8645},
     {:name=>"Venture Capital", :score_out_of_10=>6.117},
@@ -26,9 +26,9 @@ pers = City.create!(city: 'Persepolis', state: 'Ohio', summary: 'This place is t
     {:name=>"Internet Access", :score_out_of_10=>5.418500000000001},
     {:name=>"Leisure & Culture", :score_out_of_10=>6.2235},
     {:name=>"Tolerance", :score_out_of_10=>7.860499999999999},
-    {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}]')
+    {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}])
 usr = User.create!(email: 'em@il.com', password: 'apples')
-Favorite.create!(city_id: pers.id, user_id: usr.id, city_name: 'Persepolis',state: 'Ohio', summary: 'This place is terrible', total_score: 12.34, population: 1000, categories_hash_array: '[{:name=>"Housing", :score_out_of_10=>3.8375},
+Favorite.create!(city_id: pers.id, user_id: usr.id, city_name: 'Persepolis',state: 'Ohio', summary: 'This place is terrible', total_score: 12.34, population: 1000, categories_hash_array: [{:name=>"Housing", :score_out_of_10=>3.8375},
     {:name=>"Cost of Living", :score_out_of_10=>5.102},
     {:name=>"Startups", :score_out_of_10=>7.8645},
     {:name=>"Venture Capital", :score_out_of_10=>6.117},
@@ -44,4 +44,4 @@ Favorite.create!(city_id: pers.id, user_id: usr.id, city_name: 'Persepolis',stat
     {:name=>"Internet Access", :score_out_of_10=>5.418500000000001},
     {:name=>"Leisure & Culture", :score_out_of_10=>6.2235},
     {:name=>"Tolerance", :score_out_of_10=>7.860499999999999},
-    {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}]')
+    {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}])
