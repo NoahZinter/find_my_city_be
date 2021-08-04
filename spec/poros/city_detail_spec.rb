@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'City Poro' do
-  xit 'it should build a City PORO' do
+  it 'it should build a City PORO' do
     city = CityDetail.new(data)
     # binding.pry
 
@@ -28,20 +28,4 @@ RSpec.describe 'City Poro' do
     {:name=>"Tolerance", :score_out_of_10=>7.860499999999999},
     {:name=>"Outdoors", :score_out_of_10=>7.932999999999999}])
   end
-
-  # it 'finds no urban areas' do
-  #   spokane = {:_links=>
-  #             {:"city:admin1_division"=>{:href=>"https://api.teleport.org/api/countries/iso_alpha2:US/admin1_divisions/geonames:WA/", :name=>"Washington"},
-  #              :"city:alternate-names"=>{:href=>"https://api.teleport.org/api/cities/geonameid:5811696/alternate_names/"},
-  #              :"city:country"=>{:href=>"https://api.teleport.org/api/countries/iso_alpha2:US/", :name=>"United States"},
-  #              :"city:timezone"=>{:href=>"https://api.teleport.org/api/timezones/iana:America%2FLos_Angeles/", :name=>"America/Los_Angeles"},
-  #              :self=>{:href=>"https://api.teleport.org/api/cities/geonameid:5811696/"}},
-  #              :full_name=>"Spokane, Washington, United States",
-  #              :geoname_id=>5811696,
-  #              :location=>{:geohash=>"c2krpu4v8he9fh2h59gj", :latlon=>{:latitude=>47.65966, :longitude=>-117.42908}},
-  #              :name=>"Spokane",
-  #
-  #              :population=>213272}
-  #   city = CityDetail.new(spokane)
-  # end
 end
