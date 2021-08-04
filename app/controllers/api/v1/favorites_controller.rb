@@ -15,6 +15,6 @@ class Api::V1::FavoritesController < ApplicationController
   private
 
   def favorite_creator(city)
-    Favorite.new(user_id: params[:user_id], city_id: params[:city_id], city_name: city.city, state: city.state, summary: city.summary, total_score: city.total_score, categories_hash_array: city.categories_hash_array)
+    Favorite.new(user_id: params[:user_id], city_id: params[:city_id], city_name: city.city, population: city.population, state: city.state, summary: city.summary, total_score: city.total_score, categories_hash_array: city.categories_hash_array)
   end
 end

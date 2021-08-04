@@ -24,6 +24,7 @@ RSpec.describe 'Favorites Requests' do
       expect(fav[:city_name]).is_a? String
       expect(fav[:state]).is_a? String
       expect(fav[:summary]).is_a? String
+      expect(fav[:population]).is_a? Integer
       expect(fav[:total_score]).is_a? Float
       expect(fav[:categories_hash_array]).is_a? Array
     end
