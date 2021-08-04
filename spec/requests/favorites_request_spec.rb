@@ -25,17 +25,7 @@ RSpec.describe 'Favorites Requests' do
     it 'can create a favorite' do
       user_id = create(:user).id
       city_id = create(:city).id
-      favorite_params = {
-        user_id: user_id,
-        city_id: city_id,
-        city_name: 'Denver',
-        state: 'Colorado',
-        summary: 'It is a good place',
-        total_score: 55.55, 
-        categories_hash_array: @categories_array
-      }
-      headers = { "CONTENT_TYPE" => "application/json"}
-      post '/api/v1/favorites', headers: headers, params: JSON.generate(favorite: favorite_params)
+      post "/api/v1/favorites?user_id=#{user_id}&city_id=#{city_id}"
       created_favorite = Favorite.last
 
       expect(response.status).to eq 201
@@ -46,28 +36,17 @@ RSpec.describe 'Favorites Requests' do
     it 'serializes favorite data' do
       user_id = create(:user).id
       city_id = create(:city).id
-      favorite_params = {
-        user_id: user_id,
-        city_id: city_id,
-        city_name: 'Denver',
-        state: 'Colorado',
-        summary: 'It is a good place',
-        total_score: 55.55, 
-        categories_hash_array: @categories_array
-      }
-      headers = { "CONTENT_TYPE" => "application/json"}
-      post '/api/v1/favorites', headers: headers, params: JSON.generate(favorite: favorite_params)
+      post "/api/v1/favorites?user_id=#{user_id}&city_id=#{city_id}"
 
       fav = JSON.parse(response.body, symbolize_names: true)
-      fav = fav[:data][:attributes]
 
       expect(fav[:user_id]).is_a? Integer
       expect(fav[:city_id]).is_a? Integer
-      expect(fav[:city_name]).to eq 'Denver'
-      expect(fav[:state]).to eq 'Colorado'
-      expect(fav[:summary]).to eq 'It is a good place'
-      expect(fav[:total_score]).to eq 55.55
-      expect(fav[:categories_hash_array]).to eq @categories_array
+      expect(fav[:city_name]).is_a? String
+      expect(fav[:state]).is_a? String
+      expect(fav[:summary]).is_a? String
+      expect(fav[:total_score]).is_a? Float
+      expect(fav[:categories_hash_array]).is_a? Array
     end
 
   end
