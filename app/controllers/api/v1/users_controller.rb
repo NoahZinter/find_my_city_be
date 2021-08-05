@@ -9,11 +9,8 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
-  # User params method for OAuth login
-
-  # private
-
-  # def user_params
-  #   # params.require(:user).permit(:google_id, :email, :token)
-  # end
+  def favorites
+    user = User.find(params[:id])
+    render json: FavoriteSerializer.new(user.favorites).serializable_hash.to_json
+  end
 end
