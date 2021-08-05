@@ -64,8 +64,10 @@ The following is a depiction of the Database Schema
 [OpenWeather](https://openweathermap.org/)
 [Teleport](https://developers.teleport.org/api/)
 ## API Endpoints
- - City Search `asdf`
- - User Favorite Save `asdf`
+ - Teleport endpoints 
+   - City Search `GET /api/cities` Find one city based on city name and state initials search
+ - OpenWeather enpoints
+   - Weather Info `GET /date/2.5/weather` Get the weather for a specific day
 
 ## Technologies Used
 - Ruby
