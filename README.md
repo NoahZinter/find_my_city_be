@@ -61,13 +61,18 @@ RSpec testing suite is utilized for testing this application.
 The following is a depiction of the Database Schema
 ![Find My City Schema](https://i.ibb.co/FVxtwj0/Screen-Shot-2021-08-04-at-2-48-34-PM.png)
 ## API Services Used
-[OpenWeather](https://openweathermap.org/)
+[OpenWeather](https://openweathermap.org/) |
 [Teleport](https://developers.teleport.org/api/)
 ## API Endpoints
- - Teleport endpoints 
-   - City Search `GET /api/cities` Find one city based on city name and state initials search
- - OpenWeather enpoints
-   - Weather Info `GET /date/2.5/weather` Get the weather for a specific day
+ - City 
+   - **City Search**. Find one city based on city name and state initials search. This also returns a list of city scores if available, else the population of the city.  `GET https://helpmefindmycity-api.herokuapp.com/api/v1/city?city=#{city}&state_initials=#{state}`
+   - **City Favorites**. Get list of user favorite cities. `GET https://helpmefindmycity-api.herokuapp.com/api/v1/users/#{user_id}/favorites`
+   - **City Add Favorite** Add a city to user's favorite list. `POST https://helpmefindmycity-api.herokuapp.com/api/v1/favorites`
+   - **City Delete Favorite** Delete a city from a user's favorite list. `DELETE https://helpmefindmycity-api.herokuapp.com/api/v1/favorites/#{favorite_id}`
+ - User
+   - **User Register** Register a User `POST https://helpmefindmycity-api.herokuapp.com/api/v1/users`
+ - Weather
+   - **Weather Information** Get the weather for a specific day `GET https://helpmefindmycity-api.herokuapp.com/api/v1/weather`
 
 ## Technologies Used
 - Ruby
@@ -94,20 +99,20 @@ The following is a depiction of the Database Schema
 [https://helpmefindmycity.herokuapp.com](https://helpmefindmycity.herokuapp.com)
 ## Authors
 - **Regina Casias**
-  [LinkedIn](https://www.linkedin.com/in/regina-casias-0a6b78196/)
+  [LinkedIn](https://www.linkedin.com/in/regina-casias-0a6b78196/) | 
   [GitHub](https://github.com/rcasias)
 - **Kon Ham**
-  [LinkedIn](https://www.linkedin.com/in/kon-ham)
+  [LinkedIn](https://www.linkedin.com/in/kon-ham) | 
   [GitHub](https://github.com/ignored-comment)
 - **Alicia Henzler**
-  [LinkedIn](https://www.linkedin.com/in/alicia-henzler-265024209/)
+  [LinkedIn](https://www.linkedin.com/in/alicia-henzler-265024209/) | 
   [GitHub](https://github.com/ahenzler)
 - **Joe Peterson**
-  [LinkedIn](https://www.linkedin.com/in/joe-peterson-14718220b/)
+  [LinkedIn](https://www.linkedin.com/in/joe-peterson-14718220b/) | 
   [GitHub](https://github.com/JoePeterson51)
 - **Joe Ray**
-  [LinkedIn](https://www.linkedin.com/in/joe-ray-a46140192/)
+  [LinkedIn](https://www.linkedin.com/in/joe-ray-a46140192/) | 
   [GitHub](https://github.com/joeray100)
 - **Noah Zinter**
-  [LinkedIn](https://www.linkedin.com/in/noahzinter) 
+  [LinkedIn](https://www.linkedin.com/in/noahzinter) | 
   [GitHub](https://github.com/NoahZinter)
